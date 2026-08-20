@@ -9,8 +9,8 @@ resources:
   repositories:
     - repository: application
       type: github
-      name: LaSalleCollegeResume1311157/Resume # YOUR-GITHUB-ORG/YOUR-REPOSITORY
-      endpoint: 9959bcd1-1e40-4075-a804-eac0808e2926 # YOUR-GITHUB-SERVICE-CONNECTION
+      name: LaSalleCollegeResume1311157/Resume # MY-GITHUB-ORG/YOUR-REPOSITORY
+      endpoint: 9959bcd1-1e40-4075-a804-eac0808e2926 # MY-GITHUB-SERVICE-CONNECTION
       ref: refs/heads/main
       trigger:
         branches:
@@ -21,8 +21,8 @@ variables:
   nodeVersion: '20.x'
   workingDirectory: '$(Pipeline.Workspace)/application'
   artifactName: 'webapp'
-  azureServiceConnection: 276d37ae-840f-46b8-a7f5-8d8536a10bb3 # 'YOUR-AZURE-SERVICE-CONNECTION'
-  azureWebAppName: MY-PRODUCTION-AZURE-WEB-APP #'YOUR-AZURE-WEB-APP-NAME'
+  azureServiceConnection: 276d37ae-840f-46b8-a7f5-8d8536a10bb3 # 'MY-AZURE-SERVICE-CONNECTION'
+  azureWebAppName: MY-PRODUCTION-AZURE-WEB-APP #'MY-AZURE-WEB-APP-NAME'
 
 stages:
   - stage: Build
