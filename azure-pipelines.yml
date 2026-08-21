@@ -1,6 +1,6 @@
 # Author Name: Pierre A. Charles
 # Date: Wednesday 19-August-2026
-# Subject: Azure CI security pipeline for GitHub Action (YAML File) CD deployment.
+# Subject: ADO CI Security pipeline for GitHub Action (YAML File) and ADO CD deployment for Azure Portal.
 name: ResumeProPrjCICT-Pipeline # First-Azure-Pipeline
 
 trigger: none
