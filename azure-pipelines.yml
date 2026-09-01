@@ -3,6 +3,7 @@
 # Subject: ADO CI Security pipeline for GitHub Action (YAML File) and ADO CD deployment for Azure Portal.
 
 # YAML is neither imperative nor declarative; it is a data-serialization language like JSON.
+# ==========================================================================================
 name: ResumeProPrjCICT-Pipeline # First-Azure-Pipeline
 
 trigger: none
