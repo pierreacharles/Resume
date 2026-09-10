@@ -27,6 +27,9 @@ variables:
   azureServiceConnection: 276d37ae-840f-46b8-a7f5-8d8536a10bb3 # 'MY-AZURE-SERVICE-CONNECTION'
   azureWebAppName: MY-PRODUCTION-AZURE-WEB-APP #'MY-AZURE-WEB-APP-NAME'
 
+# =====================
+# BUILD AND TEST STAGE
+# =====================
 stages:
   - stage: Build
     displayName: Build and test
@@ -68,6 +71,9 @@ stages:
             artifact: $(artifactName)
             displayName: Publish deployment artifact
 
+# =====================
+# DEPLOYMENT STAGE
+# =====================
   - stage: Deploy
     displayName: Deploy website or service
     dependsOn: Build
